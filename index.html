@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>birthdays created by Muneer</title>
+    <meta name="description" content="This birthdays of muneer/tracy/rachel/ines">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        height: 100vh;
+        width: 100vw;
+        font-family: sans-serif;
+    }
+    div{
+        position: relative;
+        width: 50%;
+        height: 50%;
+        background-color: black;
+        border: 1px solid white;
+    }
+    .muneer{
+        background-image: url("img/muneer.jpg");
+        background-size: cover;
+        background-position-y: 0px;
+        background-position-x: 50%;
+        position: relative;
+    }
+    .tracy{
+        background-image: url("img/tracy.jpg");
+        background-size: cover;
+        background-position-y: 40%;
+        position: relative;
+    }
+    .rachel{
+        background-image: url("img/rachel.jpg");
+        background-size: no-repeat;
+        background-position-y: 60%;
+        background-position-x: 70%;
+        position: relative;
+    }
+    .ines{
+        background-image: url("img/ines.jpg");
+        background-size:cover;
+        background-position-y: 30%;
+        background-position-x: 60%;
+        position: relative;
+    }
+    .pic::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0.7;
+    }
+    .muneer::after,.ines::after{
+        background-color: #7510f7;
+    }
+    .rachel::after,.tracy::after{
+        background-color: #2196f3;
+    }
+    a{
+        z-index: 2;
+        position: absolute;
+        text-decoration: none;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 15px;
+        border-radius: 10px;
+    }
+    .muneer a, .ines a{
+        background-color: #2196f3;
+    }
+    .tracy a, .rachel a{
+        background-color: #7510f7;
+    }
+</style>
+<body>
+    <div class="muneer pic"><a href="muneer.html">Muneer's birthday</a></div>
+    <div class="tracy pic"><a href="tracy.html">Tracy's birthday</a></div>
+    <div class="rachel pic"><a href="rachel.html">Rachel's birthday</a></div>
+    <div class="ines pic"><a href="ines.html">Ines's birthday</a></div>
+</body>
+</html>
